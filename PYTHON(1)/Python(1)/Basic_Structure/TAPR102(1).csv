@@ -1,0 +1,9 @@
+,,Report ,,,,,,,,,,,,,,
+,,Foam Module Station Data,,,,,,,,,,,,,,
+Units,Primary Key,,,,,,Gram,,,,,,,,,
+,Sl.No,DateTime,User,OperationalShift,StackBarcodeData,Robot Cycle Time,GlueWeight,Spare01,Spare02,Spare03,Spare04,Spare05,Spare06,Spare07,Spare08,Spare09
+Data Type,long long,datetime,nvarchar(50),nvarchar(50),nvarchar(50),real,real,real,real,real,real,real,real,real,real,real
+,,11-04-2022 10:11:11,ABC,A,NK67181008BB,,200.0,,,,,,,,,
+,,11-04-2022 10:28:22,ABC,B,NL60181009DA,,200.0,,,,,,,,,
+,,11-04-2022 10:40:01,ABC,C,NL63181009E3,,200.0,,,,,,,,,
+,,11-04-2022 11:15:10,ABC,A,NL66181009E5,,200.0,,,,,,,,,

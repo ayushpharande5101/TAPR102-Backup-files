@@ -1,0 +1,31 @@
+from pymodbus.client import ModbusTcpClient
+"""
+IP_Address = '192.168.10.10'  #192.168.10.10
+client = ModbusTcpClient(IP_Address)
+print(client.connect())
+
+result = client.read_holding_registers(1,23)
+k = result.registers
+
+print(k)
+value = k
+"""
+def split_ascii_value(value):
+
+  high_byte = value >> 8
+  low_byte = value & 0xFF
+  return high_byte, low_byte
+k = [65]
+for i in k:
+    value = i
+    high_byte, low_byte = split_ascii_value(value)
+    #print(high_byte)  # 123
+    #print(low_byte)  # 45
+
+    if ((65 <= low_byte <= 90) or (48 <= low_byte <= 57)) and low_byte != 0:
+        print(chr(low_byte), end="")
+
+    if ((65 <= high_byte <= 90) or (48 <= high_byte <= 57)) and high_byte != 0:
+        print(chr(high_byte), end="")
+
+split_ascii_value(0)
